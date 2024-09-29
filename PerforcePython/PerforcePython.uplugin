@@ -1,19 +1,27 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "0.1",
-	"FriendlyName": "Perforce Python Nodes",
-	"Description": "P4Python module for Unreal Engine",
+	"VersionName": "1.0",
+	"FriendlyName": "Perforce Python Blueprint Nodes",
+	"Description": "Installs P4Python module for Unreal Engine and provides some convenience BP nodes for running P4 commands.",
 	"Category": "Scripting",
 	"CreatedBy": "Jase Lindgren",
-	"CreatedByURL": "",
-	"DocsURL": "",
+	"CreatedByURL": "https://github.com/jase-perf/UE-Perforce-Python-Plugin",
+	"DocsURL": "https://github.com/jase-perf/UE-Perforce-Python-Plugin/blob/main/README.md",
 	"MarketplaceURL": "",
-	"SupportURL": "",
+	"SupportURL": "https://github.com/jase-perf/UE-Perforce-Python-Plugin/issues",
 	"EngineVersion": "5.4.0",
 	"CanContainContent": true,
-	"IsBetaVersion": true,
+	"IsBetaVersion": false,
 	"Installed": true,
+	"PythonRequirements": [
+		{
+			"Platform": "All",
+			"Requirements": [
+				"p4python==2024.1.2645203 --hash=sha256:d15885c61290a6d82f240756658fb79a0dfc1acad15c3c64be81c77d5062ef36"
+			]
+		}
+	],
 	"Plugins": [
 		{
 			"Name": "PythonScriptPlugin",
